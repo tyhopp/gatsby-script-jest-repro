@@ -1,8 +1,8 @@
 {
-  "name": "jest-test",
+  "name": "gatsby-script-jest-repro",
   "version": "1.0.0",
   "private": true,
-  "description": "jest-test",
+  "description": "gatsby-script-jest-repro",
   "author": "tyhopp",
   "keywords": [
     "gatsby"
@@ -12,11 +12,19 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "dependencies": {
-    "gatsby": "^4.14.1",
+    "gatsby": "^4.15.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^28.1.0",
+    "babel-preset-gatsby": "^2.15.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.0",
+    "react-test-renderer": "^17.0.2"
   }
 }
