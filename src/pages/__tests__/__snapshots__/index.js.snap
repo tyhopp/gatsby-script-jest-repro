@@ -70,6 +70,13 @@ exports[`renders correctly 1`] = `
       😎
     </span>
   </p>
+  <a
+    href="/404"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    404 link
+  </a>
   <ul
     style={
       Object {
