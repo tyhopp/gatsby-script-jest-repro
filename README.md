@@ -20,3 +20,11 @@ Expect to see tests pass but encounter:
 SyntaxError: Unexpected token 'export'
 at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1773:14)
 ```
+
+## Resolution
+
+We will update our unit testing docs to add `gatsby-script` to `transformIgnorePatterns` since we would like to ship new modules as ESM (for a smaller bundler size and as part of an ongoing movement to ESM):
+
+```
+transformIgnorePatterns: [`node_modules/(?!(gatsby|gatsby-script)/)`],
+```
